@@ -1,0 +1,211 @@
+# List of commonly used Git commands
+
+git --version
+git config --global user.name "RITESHSharma-98"
+git config --global user.email "ritesh12.cse@gmail.com"
+git config --list
+
+git clone link
+// edit the file
+git status
+cd java_repo   // cd ..  // mkdir java_repo2  //cd java_repo2 //ls //ls -al  //pwd
+git status
+git add .    // go to stage area
+git commit -m "Initial commit"
+git push -u origin main  
+   //git remote set-url origin https://RITESHSharma-98:NEW_GENERATED_TOKEN@github.com/RITESHSharma-98/java_repo.git
+git push  // if -u is used then no need to use this command
+git pull 
+
+ls -a
+git init
+git remote add origin link
+git remote -v // to check the remote repository
+git branch // to check the branch
+git branch -M main // to change the branch name
+git push -u origin main // to push the code to the remote repository
+
+git branch // to check the branch
+git branch -M main // to change the branch name
+git checkout -b branch_name // to create a new branch
+git checkout branch_name // to switch to the branch
+git branch -d branch_name // to delete the branch
+git push origin --delete branch_name // to delete the branch from remote repository 
+git diff main// to check the difference between the files
+git checkout branch_name // to switch to the branch
+git merge main // to merge the branch with the main branch
+git push origin branch_name // to push the branch to remote repository
+git merge branch_name // to merge the branch with the current branch
+git pull origin branch_name // to pull the branch from remote repository
+
+git switch branch_name // to switch to the branch
+git switch -c branch_name // to create a new branch and switch to it
+
+
+git reset filenmae // to remove the file from the staging area
+git reset // to remove all the files from the staging area
+git reset head~1 // to remove the last commit
+git reset HEAD~2 // to remove the last 2 commit
+
+git log
+git log --oneline // to check the commit history
+
+git reset hash // to remove the commit   
+
+git reflog // to check the history of the commit
+git reset --hard hash // to remove the commit and the change also from vs code
+
+fork the repository by github
+
+git rebase main // to rebase the branch with the main branch
+
+
+
+
+# Initialize a new Git repository
+git init
+
+# Clone an existing repository
+git clone <repository_url>
+
+# Check the status of the repository
+git status
+
+# Add files to the staging area
+git add <file_name>
+git add .
+
+# Commit changes to the repository
+git commit -m "Commit message"
+
+# Push changes to the remote repository
+git push origin <branch_name>
+
+# Pull changes from the remote repository
+git pull origin <branch_name>
+
+# Pull changes from the remote repository and merge with the current branch
+git pull
+
+# Create a new branch
+git branch <branch_name>
+
+# Switch to a different branch
+git checkout <branch_name>
+
+# Merge a branch into the current branch
+git merge <branch_name>
+
+# View the commit history
+git log
+
+# View the commit history with a graph
+git log --graph --oneline --all
+
+# Show changes between commits, commit and working tree, etc
+git diff
+
+# Stash changes in the working directory
+git stash
+
+# Apply stashed changes
+git stash apply
+
+# Delete a branch
+git branch -d <branch_name>
+
+# Fetch changes from the remote repository
+git fetch
+
+# Rebase the current branch onto another branch
+git rebase <branch_name>
+
+# Show information about a remote repository
+git remote -v
+
+# Add a new remote repository
+git remote add <name> <url>
+
+# Remove a remote repository
+git remote remove <name>
+
+# Rename a remote repository
+git remote rename <old_name> <new_name>
+
+# Show information about tags
+git tag
+
+# Create a new tag
+git tag <tag_name>
+
+# Delete a tag
+git tag -d <tag_name>
+
+# Push tags to the remote repository
+git push origin --tags
+
+# Remove untracked files from the working directory
+git clean -f
+
+# Show the commit that added or removed lines in a file
+git blame <file_name>
+
+# Stage & Snapshot
+git status – Show modified files in the working directory, staged for your next commit.
+git add [file] – Add a file as it looks now to your next commit (stage).
+git reset [file] – Unstage a file while retaining the changes in the working directory.
+git diff – Show differences between files that are changed but not staged.
+git diff --staged – Show differences between files that are staged but not yet committed.
+git commit -m "[descriptive message]" – Commit your staged content as a new commit snapshot.
+
+# Setup
+git config --global user.name "[firstname lastname]" – Set a name that is identifiable for reviewing version history.
+git config --global user.email "[valid-email]" – Set an email address associated with each history marker.
+git config --global color.ui auto – Enable automatic command-line coloring for Git.
+
+# Setup & Init
+git init – Initialize an existing directory as a Git repository.
+git clone [url] – Retrieve an entire repository from a hosted location via URL.
+
+# Branch & Merge
+git branch – List your branches. A * appears next to the active branch.
+git branch [branch-name] – Create a new branch at the current commit.
+git checkout [branch] – Switch to another branch and check it out into your working directory.
+git merge [branch] – Merge the specified branch’s history into the current one.
+git log – Show all commits in the current branch’s history.
+
+# Share & Update
+git remote add [alias] [url] – Add a Git URL as an alias.
+git fetch [alias] – Fetch all branches from the remote.
+git merge [alias]/[branch] – Merge a remote branch into your current branch.
+git push [alias] [branch] – Transmit local branch commits to the remote repository.
+git pull – Fetch and merge any commits from the tracking remote branch.
+
+# Tracking Path Changes
+git rm [file] – Delete a file from the project and stage the removal for commit.
+git mv [existing-path] [new-path] – Move/rename a file and stage the change.
+git log --stat -M – Show commit logs with details of moved paths.
+
+# Temporary Commits
+git stash – Save modified and staged changes temporarily.
+git stash list – List stashed changes.
+git stash pop – Apply stashed changes from the top of the stash stack.
+git stash drop – Remove the latest stashed change.
+
+# Rewrite History
+git rebase [branch] – Apply commits of the current branch on top of the specified branch.
+git reset --hard [commit] – Clear the staging area and reset working tree to a specific commit.
+
+# Inspect & Compare
+git log – Show commit history for the active branch.
+git log branchB..branchA – Show commits on branchA that are not on branchB.
+git log --follow [file] – Show commits that changed a file, even across renames.
+git diff branchB...branchA – Show the difference between branchA and branchB.
+git show [SHA] – Show any object in Git in a human-readable format.
+
+# Ignoring Patterns
+git config --global core.excludesfile [file] – Set a global ignore pattern.
+Save patterns in a .gitignore file, e.g.:
+logs/
+*.notes
+pattern*/

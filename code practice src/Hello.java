@@ -1,6 +1,15 @@
 // install jdk (17 )
 // check in terminal java --version And javac --version
 
+//Install git bash
+//Open git bash (+ behind terminal in vscode)
+//Run git clone https://github.com/yourusername/yourrepository.git
+//Run git pull
+//Run git push
+//Run git commit -m "message"
+//Run git push
+//Run git pull
+
 class Hello {
     public static void main(String[] args) {
         System.out.println("Hello, World!");

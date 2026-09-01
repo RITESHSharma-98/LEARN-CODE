@@ -12,13 +12,13 @@ public class hello {
 		System.out.println(a0);
 		
 		int aa=257;
-		byte k=(byte)aa;
+		byte k=(byte)aa;  // 257 % 256 = 1
 		
 		float f=5.6f;
-		int t=(int)f;
+		int t=(int)f;  // 5.6 is converted to 5
 		
 		int a2=2567;
-		byte b2=(byte)a;
+		byte b2=(byte)a;  // 2567 % 256 = 15
 		System.out.println(k);
 		
 		byte a3=10;
@@ -29,3 +29,13 @@ public class hello {
 	}
 
 }
+
+
+/**
+ *  int i=12;
+ *  byte b= i;
+ * This gives an error because Java does not automatically convert an int variable to byte,
+ * even if the value 12 can fit inside the byte range.
+ * You need to convert explicitly to byte using a type cast like this:
+ * byte b= (byte)i;
+ */

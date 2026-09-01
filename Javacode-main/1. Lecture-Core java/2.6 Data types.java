@@ -21,7 +21,7 @@ public class hello {
 /*
 | Data Type |                              Size | Range / Values                      |
 | --------- | --------------------------------: | ----------------------------------- |
-| `boolean` | **Not precisely defined by Java** | `true` / `false`                    |
+| `boolean` | **Not precisely defined by Java** | `true` / `false`   Not 0 or 1       |
 | `byte`    |               **1 byte (8 bits)** | -128 to 127                         |
 
 | `short`   |             **2 bytes (16 bits)** | -32,768 to 32,767                   |

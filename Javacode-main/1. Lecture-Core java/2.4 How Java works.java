@@ -7,3 +7,10 @@ public class Main {
 	}
 
 }
+
+
+// javac How Java works.java
+// java How Java works
+
+
+
